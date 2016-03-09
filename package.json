@@ -1,0 +1,21 @@
+{
+  "name": "mybot",
+  "version": "0.3.0",
+  "private": true,
+  "author": "Sean P. Kane <spkane00@gmail.com>",
+  "description": "Your friendly, neighborhood Chat Bot",
+  "dependencies": {
+    "hubot": "^2.18.0",
+    "hubot-diagnostics": "^0.0.1",
+    "hubot-google-translate": "^0.2.0",
+    "hubot-help": "^0.1.2",
+    "hubot-redis-brain": "^0.0.3",
+    "hubot-scripts": "^2.16.2",
+    "hubot-slack": "^3.4.2",
+    "moment-timezone": "^0.5.1",
+    "nan": "^2.2.0"
+  },
+  "engines": {
+    "node": "~5.7.1"
+  }
+}

@@ -1,0 +1,21 @@
+require 'socket'
+
+host_ip_obj = Socket.ip_address_list.detect{|intf| intf.ipv4_private?}
+host_ip = host_ip_obj.ip_address
+
+USER = ENV['USER']
+
+#Docker ENV Variables
+BIND_ADDRESS="0.0.0.0"
+ENVIRONMENT="development"
+SERVICE_NAME="bot"
+SERVICE_ENV="development"
+EXPRESS_USER="vagrant"
+EXPRESS_PASSWORD="vagrant"
+PORT="8080"
+HUBOT_ADAPTER="slack"
+HUBOT_ALIAS="hu"
+HUBOT_NAME="bot"
+HUBOT_LOG_LEVEL="debug"
+HUBOT_SLACK_TOKEN=""
+REDIS_URL="redis://#{host_ip}:6379"

@@ -1,0 +1,17 @@
+# Node.js stuff
+node_modules
+*.log
+.hubot_history
+
+#Mac OS X Stuff
+.DS_Store*
+
+#Vagrant stuff
+.vagrant
+config.rb
+
+#Things that have secrets in them
+secret-*
+newrelic.js
+srbot.rake
+centurion-configs
