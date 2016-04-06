@@ -41,6 +41,7 @@ docker run \
     -e HUBOT_ADAPTER="${HUBOT_ADAPTER}" \
     -e HUBOT_ALIAS="${HUBOT_ALIAS}" \
     -e HUBOT_NAME="${HUBOT_NAME}" \
+    -e HUBOT_LOG_LEVEL="${HUBOT_LOG_LEVEL}"\
     -e REDIS_URL="${REDIS_URL}" \
     -e HUBOT_SLACK_TOKEN="${HUBOT_SLACK_TOKEN}" \
     -d --restart="always" --name ${STUDENT_ID}_bot ${HUB_USER}/mybot:latest
