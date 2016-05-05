@@ -18,5 +18,6 @@ ADD ./*.json /data/app/
 
 RUN cd /data/app && npm install
 
-CMD supervisord -n
+CMD ["supervisord", "-n"]
+
 
