@@ -1,0 +1,29 @@
+version: '2'
+services:
+  mybot:
+    build:
+      context: "."
+    image: "mybot:latest"
+    environment:
+      BIND_ADDRESS: "0.0.0.0"
+      ENVIRONMENT: "development"
+      SERVICE_NAME: "${STUDENT_ID}_bot"
+      SERVICE_ENV: "development"
+      EXPRESS_USER: "${STUDENT_ID}_bot"
+      EXPRESS_PASSWORD: "${STUDENT_ID}_pw"
+      PORT: "8080"
+      HUBOT_ADAPTER: "slack"
+      HUBOT_ALIAS: "${STUDENT_ID}"
+      HUBOT_NAME: "${STUDENT_ID}_bot"
+      HUBOT_LOG_LEVEL: "debug"
+      REDIS_URL: "redis://redis:6379"
+      HUBOT_SLACK_TOKEN: "${SLACK_TOKEN}"
+    ports:
+      - "8080:8080"
+    links:
+      - redis
+  redis:
+    image: "redis:3.2.5"
+    expose:
+      - "6379"
+
