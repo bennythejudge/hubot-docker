@@ -11,6 +11,5 @@ if [ ${STUDENT_ID} == "000" ] || [ ${SLACK_TOKEN} == "000" ] || [ ${HUB_USER} ==
   echo "You must edit this file and set the"
   echo "STUDENT_ID, SLACK_TOKEN, & HUB_USER variables correctly."
   echo
-  exit 9
 fi
 

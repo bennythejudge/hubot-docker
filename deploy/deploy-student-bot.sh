@@ -24,7 +24,7 @@ export HUBOT_SLACK_TOKEN="${SLACK_TOKEN}"
 
 docker build -t ${HUB_USER}/mybot:latest .
 docker push ${HUB_USER}/mybot:latest
-docker rm -f ${STUDENT_ID}_bot; true
+docker rm -f ${STUDENT_ID}_bot || true
 docker run \
     -e BIND_ADDRESS="${BIND_ADDRESS}" \
     -e ENVIRONMENT="${ENVIRONMENT}" \
