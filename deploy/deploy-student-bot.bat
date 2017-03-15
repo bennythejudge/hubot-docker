@@ -1,13 +1,6 @@
 REM Windows Batch File
 
-REM Set the 3 variables below as instructed in class
-REM or edit and run the deploy-env.bat file
-
-REM You must edit this file and set the
-REM STUDENT_ID, SLACK_TOKEN, & HUB_USER variables correctly.
-REM set STUDENT_ID="000"
-REM set SLACK_TOKEN="000"
-REM set HUB_USER="000"
+REM Edit and run the deploy-env.bat file first.
 
 set BIND_ADDRESS=0.0.0.0
 set ENVIRONMENT=development
