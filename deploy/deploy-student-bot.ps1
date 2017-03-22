@@ -4,17 +4,17 @@
 
 $env:BIND_ADDRESS=0.0.0.0
 $env:ENVIRONMENT=development
-$env:SERVICE_NAME=%STUDENT_ID%_bot
+$env:SERVICE_NAME='$STUDENT_ID'_bot
 $env:SERVICE_ENV=development
-$env:EXPRESS_USER=%STUDENT_ID%_bot
-$env:EXPRESS_PASSWORD=%STUDENT_ID%_pw
+$env:EXPRESS_USER='$STUDENT_ID'_bot
+$env:EXPRESS_PASSWORD='$STUDENT_ID'_pw
 $env:PORT=8080
 $env:HUBOT_ADAPTER=slack
-$env:HUBOT_ALIAS=%STUDENT_ID%
-$env:HUBOT_NAME=%STUDENT_ID%_bot
+$env:HUBOT_ALIAS='$STUDENT_ID'
+$env:HUBOT_NAME='$STUDENT_ID'_bot
 $env:HUBOT_LOG_LEVEL=debug
 $env:REDIS_URL=redis://127.0.0.1:6379
-$env:HUBOT_SLACK_TOKEN=%SLACK_TOKEN%
+$env:HUBOT_SLACK_TOKEN='$SLACK_TOKEN'
 
 docker build -t $HUB_USER/mybot:latest .
 docker push $HUB_USER/mybot:latest
