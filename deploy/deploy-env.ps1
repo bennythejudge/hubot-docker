@@ -1,4 +1,4 @@
-# Windows PowerShell Scrip
+# Windows PowerShell Script
 
 #
 # Set the 3 variables below as instructed in class
